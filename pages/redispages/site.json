@@ -1,0 +1,33 @@
+{
+        "pages":[
+            {
+                "label":"Home",
+                "url":"/",
+                "redirect":"/index/1"
+            },
+            {
+                "label":"商标",
+                "children":[
+                    {
+                        "label":"商标代理系统",
+                        "url":"/crud",
+                        "rewrite":"/crud/list",
+                        "icon":"fa fa-cube",
+                        "children":[
+                            {
+                                "label":"需求问题",
+                                "url":"/crud/list",
+                                "icon":"fa fa-list",
+                                "schemaApi":"get:http://robot.com:8181/dalconfig/config-service/getraw/curdlist"
+                            },
+                            {
+                                "label":"查看",
+                                "url":"/crud/:id",
+                                "schemaApi":"get:http://robot.com:8181/dalconfig/config-service/getraw/curdview"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }

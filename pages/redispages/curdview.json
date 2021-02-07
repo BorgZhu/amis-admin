@@ -1,0 +1,36 @@
+{
+    "type":"page",
+    "title":"查看详情",
+    "remark":null,
+    "toolbar":[
+        {
+            "type":"button",
+            "actionType":"link",
+            "link":"/crud/list",
+            "label":"返回列表"
+        }
+    ],
+    "body":[
+        {
+            "type":"form",
+	    "actions": [],
+            "initApi":"http://robot.com:8181/dal/dal-service/query/5C82ABB0-6826-4F98-8AF2-3609FD5F2769/${params.id}",
+            "controls":[
+                {
+                    "type":"static",
+                    "name":"xuhao",
+                    "label":"序号"
+                },
+		 {
+          "type": "divider"
+        },
+	{
+                    "type":"static",
+                    "name":"mingchen",
+                    "label":"名称"
+                }
+
+            ]
+        }
+    ]
+}
